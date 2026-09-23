@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sameer Ahmed | WordPress Developer</title>
+<meta name="description" content="Sameer Ahmed — WordPress Developer with 3+ years of experience building responsive WordPress websites with Elementor, WPBakery, HTML and CSS.">
+<style>
+:root{--bg:#020706;--panel:#07100e;--card:#0b1412;--line:#1c2a26;--green:#20e58a;--green2:#0fbf70;--white:#f5f8f7;--muted:#9eaaa6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 88% 2%,#063727 0,transparent 24%),var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}a{color:inherit}
+.wrap{max-width:1600px;margin:auto;padding:18px;display:grid;grid-template-columns:330px minmax(0,1fr);gap:22px}
+.side{height:calc(100vh - 36px);position:sticky;top:18px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,#071310,#040b09);padding:20px;overflow:auto}
+.portrait{width:100%;height:355px;border-radius:18px;overflow:hidden;border:1px solid #2b3b36;background:#0d1513}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}
+.status{display:flex;align-items:center;gap:9px;margin:18px 0 12px;color:#d5ddda;font-size:13px}.status i{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 15px var(--green);animation:pulse 1.6s infinite}@keyframes pulse{50%{opacity:.35}}
+.side h1{font-size:31px;line-height:1;margin:0 0 7px;letter-spacing:-1.1px}.side .role{font-size:17px;color:#c6cfcc}.side .desc{color:var(--muted);font-size:13px;line-height:1.6;margin:14px 0}
+.buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:7px;padding:12px 15px;border-radius:9px;text-decoration:none;border:1px solid var(--line);background:#0c1513;font-weight:750;font-size:13px;transition:.25s}.btn:hover{transform:translateY(-2px);border-color:#20e58a66}.btn.primary{background:var(--green);color:#00180d;border-color:var(--green)}
+.nav{margin-top:19px;border-top:1px solid var(--line);padding-top:12px}.nav a{display:flex;align-items:center;gap:12px;padding:10px 12px;text-decoration:none;color:#b9c4c0;border-radius:9px;font-size:13px}.nav a:hover,.nav a.active{color:var(--green);background:#0d1c17}.nav b{width:19px;text-align:center}
+.sidefoot{border-top:1px solid var(--line);margin-top:15px;padding-top:14px;color:#75837e;font-size:12px;line-height:1.55}
+.content{min-width:0}.section{padding:50px 14px;border-bottom:1px solid #ffffff0b}.hero{min-height:570px;display:flex;align-items:center}
+.badge{display:inline-block;border:1px solid var(--line);background:#081310;padding:7px 12px;border-radius:8px;font-size:12px;color:#d1dad6}
+.hero h2{font-size:clamp(48px,6vw,88px);line-height:.94;letter-spacing:-4px;margin:18px 0}.green{color:var(--green)}.lead{max-width:850px;color:#b2bdb9;font-size:18px;line-height:1.65}
+.heroactions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px}.stat,.card{background:linear-gradient(145deg,#0b1512,#07100e);border:1px solid var(--line);border-radius:14px}.stat{padding:20px}.stat strong{font-size:31px}.stat small{display:block;color:var(--muted);margin-top:4px}
+.eyebrow{color:var(--green);font:700 12px ui-monospace,monospace;letter-spacing:1.7px}.section h3{font-size:37px;margin:8px 0 26px;letter-spacing:-1.4px}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.project{padding:14px;transition:.3s;overflow:hidden}.project:hover{transform:translateY(-5px);border-color:#20e58a55}.shot{height:185px;border-radius:10px;background:linear-gradient(135deg,#0b3024,#10211d);border:1px solid #233a32;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.shot:before{content:"";position:absolute;width:180px;height:180px;background:var(--green);filter:blur(100px);opacity:.13}.browser{width:87%;height:78%;background:#f5f6f5;border-radius:8px;position:relative;box-shadow:0 15px 45px #0008;overflow:hidden}.browser:before{content:"●  ●  ●";display:block;height:22px;background:#e5e8e7;color:#82908b;font-size:7px;padding:6px 9px}.browser .screen{height:calc(100% - 22px);background:linear-gradient(145deg,#0b3c65,#0a1f32);display:flex;align-items:center;justify-content:center;color:white;font-size:18px;font-weight:850;text-align:center;padding:10px}.project h4{font-size:21px;margin:15px 2px 5px}.project p{color:var(--muted);font-size:13px;margin:0 2px 14px}.chips{display:flex;gap:6px;flex-wrap:wrap}.chip{font-size:10px;color:#aeb9b5;border:1px solid var(--line);padding:5px 8px;border-radius:6px}.view{display:inline-block;color:var(--green);font-size:12px;font-weight:800;text-decoration:none;margin:14px 2px 3px}
+.grid4{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.service{padding:22px}.service h4{font-size:19px;margin:0 0 8px}.service p{color:var(--muted);font-size:13px;line-height:1.65;margin:0}
+.job{padding:23px;margin-bottom:12px}.jobtop{display:flex;justify-content:space-between;gap:20px}.job h4{font-size:21px;margin:0}.date{font:12px ui-monospace,monospace;color:var(--green)}.company{font-weight:800;color:#cbd4d1;margin:6px 0}.job p{color:var(--muted);line-height:1.65;font-size:14px}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.tool{padding:17px}.tool b{font-size:15px}.tool small{display:block;color:var(--muted);margin-top:4px}
+.contactgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.contact{padding:18px}.contact small{display:block;color:var(--muted);margin-bottom:6px}.contact a{text-decoration:none;color:var(--green);font-weight:750;word-break:break-word}
+.reveal{opacity:0;transform:translateY(22px);transition:.65s ease}.reveal.show{opacity:1;transform:none}.dock{display:none}
+@media(max-width:1050px){.wrap{grid-template-columns:280px 1fr}.portrait{height:300px}.projects{grid-template-columns:1fr}.tools{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:780px){.wrap{display:block;padding:10px}.side{position:relative;top:0;height:auto;padding:16px}.portrait{height:auto;aspect-ratio:4/4.6;max-width:420px;margin:auto}.portrait img{object-position:center}.side h1{text-align:center;margin-top:4px}.side .role,.side .desc,.status{justify-content:center;text-align:center}.nav,.sidefoot{display:none}.buttons{max-width:420px;margin:auto}.section{padding:42px 5px}.hero{min-height:auto}.hero h2{font-size:49px;letter-spacing:-2.6px}.lead{font-size:16px}.stats,.grid4,.tools,.contactgrid{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.shot{height:210px}.jobtop{display:block}.date{display:block;margin-top:8px}.dock{display:flex;position:fixed;bottom:12px;left:50%;transform:translateX(-50%);z-index:20;background:#0b1513e8;border:1px solid var(--line);backdrop-filter:blur(14px);border-radius:999px;padding:7px;gap:5px;box-shadow:0 10px 40px #000}.dock a{font-size:11px;text-decoration:none;padding:9px 12px;border-radius:999px}.dock .primary{background:var(--green);color:#00180d}}
+</style></head>
+<body>
+<div class="wrap">
+<aside class="side">
+<div class="portrait"><img src="./sameer-photo.png" alt="Sameer Ahmed" loading="eager" decoding="async"></div>
+<div class="status"><i></i> Available for work</div>
+<h1>Sameer Ahmed</h1><div class="role">WordPress Developer</div>
+<p class="desc">Building responsive WordPress websites with clean layouts, practical functionality and reliable delivery.</p>
+<div class="buttons"><a class="btn primary" href="#contact">Contact Me</a><a class="btn" href="#projects">My Work</a></div>
+<nav class="nav"><a class="active" href="#home"><b>⌂</b>Home</a><a href="#about"><b>◎</b>About</a><a href="#services"><b>⚒</b>Services</a><a href="#projects"><b>▣</b>Projects</a><a href="#experience"><b>▤</b>Experience</a><a href="#toolkit"><b>◇</b>Toolkit</a><a href="#contact"><b>✉</b>Contact</a></nav>
+<div class="sidefoot">“Clean websites. Clear experiences. Real business value.”<br><br>© 2026 Sameer Ahmed</div>
+</aside>
+<main class="content">
+<section id="home" class="section hero"><div class="reveal"><span class="badge">👋 Hey, I'm</span><h2>Sameer Ahmed<br><span class="green">WordPress Developer</span></h2><p class="lead">I build, customize and maintain responsive WordPress websites for businesses and service brands, using Elementor, WPBakery, HTML and CSS.</p><div class="heroactions"><a class="btn primary" href="#projects">View My Work →</a><a class="btn" href="mailto:s.ahmed.dev98@gmail.com">Contact Me</a></div><div class="stats"><div class="stat"><strong>3+</strong><small>Years of Experience</small></div><div class="stat"><strong>5</strong><small>Selected Live Projects</small></div><div class="stat"><strong>100%</strong><small>Responsive Focus</small></div></div></div></section>
+<section id="about" class="section reveal"><div class="eyebrow">01 / ABOUT</div><h3>WordPress development built around real business needs.</h3><div class="card service"><p>WordPress Developer with 3+ years of hands-on experience building, customizing and maintaining responsive business and service websites. Strong practical skills in WordPress, Elementor, WPBakery, HTML, CSS, theme customization, plugin configuration, content management and website maintenance.</p></div></section>
+<section id="projects" class="section reveal"><div class="eyebrow">02 / FEATURED PROJECTS</div><h3>Selected live work.</h3><div class="projects">
+<div class="card project"><div class="shot"><div class="browser"><div class="screen">XCORE FREIGHT<br><small>Global Logistics</small></div></div></div><h4>Xcore Freight</h4><p>International freight & logistics website.</p><div class="chips"><span class="chip">WordPress</span><span class="chip">WPBakery</span><span class="chip">Responsive</span></div><a class="view" href="https://xcorefreight.com" target="_blank">View live website ↗</a></div>
+<div class="card project"><div class="shot"><div class="browser"><div class="screen" style="background:linear-gradient(145deg,#1464a2,#092f54)">ICL EXPRESS<br><small>Worldwide Shipping</small></div></div></div><h4>ICL Express</h4><p>International courier & freight service website.</p><div class="chips"><span class="chip">WordPress</span><span class="chip">WPBakery</span><span class="chip">Responsive</span></div><a class="view" href="https://iclxpress.com" target="_blank">View live website ↗</a></div>
+<div class="card project"><div class="shot"><div class="browser"><div class="screen" style="background:linear-gradient(145deg,#7a2c19,#24140f)">KING CARGO<br><small>Cargo Services</small></div></div></div><h4>King Cargo Services</h4><p>Cargo and logistics business website.</p><div class="chips"><span class="chip">WordPress</span><span class="chip">Elementor</span><span class="chip">Business Site</span></div><a class="view" href="https://kingcargoservices.com" target="_blank">View live website ↗</a></div>
+<div class="card project"><div class="shot"><div class="browser"><div class="screen" style="background:linear-gradient(145deg,#136449,#082a20)">BICYCLE REPAIR UAE<br><small>Service Website</small></div></div></div><h4>Bicycle Repair UAE</h4><p>Responsive service website with inquiry functionality.</p><div class="chips"><span class="chip">WordPress</span><span class="chip">Elementor</span><span class="chip">Service</span></div><a class="view" href="https://bicyclerepair.ae" target="_blank">View live website ↗</a></div>
+<div class="card project"><div class="shot"><div class="browser"><div class="screen" style="background:linear-gradient(145deg,#674d12,#251d08)">GULF HIRE ADVISORY<br><small>Recruitment Consultancy</small></div></div></div><h4>Gulf Hire Advisory</h4><p>Recruitment consultancy website with job and contact sections.</p><div class="chips"><span class="chip">WordPress</span><span class="chip">Elementor</span><span class="chip">Responsive</span></div><a class="view" href="https://gulfhireadvisory.com" target="_blank">View live website ↗</a></div>
+</div></section>
+<section id="services" class="section reveal"><div class="eyebrow">03 / SERVICES</div><h3>What I can work on.</h3><div class="grid4"><div class="card service"><h4>WordPress Development</h4><p>Responsive business and service websites built and maintained in WordPress.</p></div><div class="card service"><h4>Elementor & WPBakery</h4><p>Page building, responsive layout customization and content updates.</p></div><div class="card service"><h4>HTML & CSS Customization</h4><p>Practical front-end styling and custom changes beyond page-builder controls.</p></div><div class="card service"><h4>Maintenance & Content</h4><p>Routine updates, content management, theme adjustments and troubleshooting.</p></div></div></section>
+<section id="experience" class="section reveal"><div class="eyebrow">04 / EXPERIENCE</div><h3>Professional experience.</h3><div class="card job"><div class="jobtop"><h4>WordPress Developer & Data Entry Operator</h4><span class="date">Jan 2022 — Mar 2025</span></div><div class="company">Ad Concepts · Pakistan</div><p>Developed, managed and maintained WordPress websites, customized themes and layouts, handled front-end CSS styling, content management, routine updates and data entry.</p></div><div class="card job"><div class="jobtop"><h4>WordPress Developer</h4><span class="date">Oct 2025 — Mar 2026</span></div><div class="company">BTS Services · Pakistan</div><p>Designed responsive WordPress websites and custom page layouts, implemented HTML/CSS changes and focused on responsive behavior, visual consistency and website quality.</p></div></section>
+<section id="toolkit" class="section reveal"><div class="eyebrow">05 / TOOLKIT</div><h3>Tools & skills.</h3><div class="tools"><div class="card tool"><b>WordPress</b><small>CMS & development</small></div><div class="card tool"><b>Elementor</b><small>Advanced</small></div><div class="card tool"><b>WPBakery</b><small>Advanced</small></div><div class="card tool"><b>HTML</b><small>Front-end</small></div><div class="card tool"><b>CSS</b><small>Customization</small></div><div class="card tool"><b>WooCommerce</b><small>Basic</small></div><div class="card tool"><b>On-Page SEO</b><small>Basic</small></div><div class="card tool"><b>Responsive Design</b><small>Mobile & desktop</small></div></div></section>
+<section id="contact" class="section reveal"><div class="eyebrow">06 / CONTACT</div><h3>Let's build something useful.</h3><div class="contactgrid"><div class="card contact"><small>Email</small><a href="mailto:s.ahmed.dev98@gmail.com">s.ahmed.dev98@gmail.com</a></div><div class="card contact"><small>WhatsApp</small><a href="https://wa.me/923144989027" target="_blank">+92 314 4989027</a></div><div class="card contact"><small>Location</small><b>Wazirabad, Pakistan</b></div></div></section>
+</main></div>
+<div class="dock"><a href="#projects">Projects</a><a class="primary" href="#contact">Contact Me</a></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Reveal content safely. If IntersectionObserver is unavailable, show everything.
+  const revealItems = document.querySelectorAll(".reveal");
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add("show"));
+  }
+
+  // Make sure the hero is visible immediately.
+  const heroReveal = document.querySelector("#home .reveal");
+  if (heroReveal) heroReveal.classList.add("show");
+
+  // Highlight the current navigation item while scrolling.
+  const navLinks = document.querySelectorAll(".nav a");
+  const sections = document.querySelectorAll("main section[id]");
+
+  const setActiveNav = () => {
+    let current = "home";
+    sections.forEach((section) => {
+      const top = section.getBoundingClientRect().top;
+      if (top <= 160) current = section.id;
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+    });
+  };
+
+  setActiveNav();
+  window.addEventListener("scroll", setActiveNav, { passive: true });
+});
+</script>
+</body>
+</html>
